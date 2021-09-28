@@ -23,7 +23,7 @@ System::Void travelagency::MyForm::login_button_Click(System::Object^ sender, Sy
 	}
 	if (login_box->Text == "" && password_box->Text == "")
 	{
-		error_label->Text = "¬ведите логин и пароль \n »ли зарегистрируйтесь";
+		error_label->Text = "¬ведите логин и пароль \n »ли зарегистрируйтесь.";
 		reg_button->Focus();
 	}
 }
