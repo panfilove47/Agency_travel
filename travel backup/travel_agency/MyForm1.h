@@ -83,33 +83,36 @@ namespace travelagency {
 			this->name_of_user_label->AutoSize = true;
 			this->name_of_user_label->Font = (gcnew System::Drawing::Font(L"Arial", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->name_of_user_label->Location = System::Drawing::Point(152, 41);
+			this->name_of_user_label->Location = System::Drawing::Point(152, 36);
 			this->name_of_user_label->Name = L"name_of_user_label";
 			this->name_of_user_label->Size = System::Drawing::Size(81, 16);
 			this->name_of_user_label->TabIndex = 1;
 			this->name_of_user_label->Text = L"Enter login:";
+			this->name_of_user_label->Click += gcnew System::EventHandler(this, &MyForm1::name_of_user_label_Click);
 			// 
 			// create_password_label
 			// 
 			this->create_password_label->AutoSize = true;
 			this->create_password_label->Font = (gcnew System::Drawing::Font(L"Arial", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->create_password_label->Location = System::Drawing::Point(138, 150);
+			this->create_password_label->Location = System::Drawing::Point(138, 148);
 			this->create_password_label->Name = L"create_password_label";
 			this->create_password_label->Size = System::Drawing::Size(109, 16);
 			this->create_password_label->TabIndex = 2;
 			this->create_password_label->Text = L"Enter password:";
+			this->create_password_label->Click += gcnew System::EventHandler(this, &MyForm1::create_password_label_Click);
 			// 
 			// confirmed_password_label
 			// 
 			this->confirmed_password_label->AutoSize = true;
 			this->confirmed_password_label->Font = (gcnew System::Drawing::Font(L"Arial", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->confirmed_password_label->Location = System::Drawing::Point(132, 259);
+			this->confirmed_password_label->Location = System::Drawing::Point(132, 257);
 			this->confirmed_password_label->Name = L"confirmed_password_label";
 			this->confirmed_password_label->Size = System::Drawing::Size(121, 16);
 			this->confirmed_password_label->TabIndex = 3;
 			this->confirmed_password_label->Text = L"Repeat password:";
+			this->confirmed_password_label->Click += gcnew System::EventHandler(this, &MyForm1::confirmed_password_label_Click);
 			// 
 			// user_textbox
 			// 
@@ -143,9 +146,11 @@ namespace travelagency {
 			// 
 			// registry_button
 			// 
-			this->registry_button->Location = System::Drawing::Point(130, 343);
+			this->registry_button->Font = (gcnew System::Drawing::Font(L"Arial", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->registry_button->Location = System::Drawing::Point(141, 342);
 			this->registry_button->Name = L"registry_button";
-			this->registry_button->Size = System::Drawing::Size(124, 23);
+			this->registry_button->Size = System::Drawing::Size(103, 23);
 			this->registry_button->TabIndex = 7;
 			this->registry_button->Text = L"Register now";
 			this->registry_button->UseVisualStyleBackColor = true;
@@ -154,6 +159,7 @@ namespace travelagency {
 			// label1
 			// 
 			this->label1->AutoSize = true;
+			this->label1->ForeColor = System::Drawing::Color::Red;
 			this->label1->Location = System::Drawing::Point(42, 386);
 			this->label1->MaximumSize = System::Drawing::Size(100, 30);
 			this->label1->MinimumSize = System::Drawing::Size(300, 30);
@@ -165,6 +171,8 @@ namespace travelagency {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(174)), static_cast<System::Int32>(static_cast<System::Byte>(179)),
+				static_cast<System::Int32>(static_cast<System::Byte>(198)));
 			this->ClientSize = System::Drawing::Size(384, 491);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->registry_button);
@@ -179,6 +187,7 @@ namespace travelagency {
 			this->MinimumSize = System::Drawing::Size(400, 530);
 			this->Name = L"MyForm1";
 			this->Text = L"Registration";
+			this->Load += gcnew System::EventHandler(this, &MyForm1::MyForm1_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -186,5 +195,13 @@ namespace travelagency {
 #pragma endregion
 	private: System::Void back_button_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void registry_button_Click(System::Object^ sender, System::EventArgs^ e);
+private: System::Void MyForm1_Load(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void name_of_user_label_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void create_password_label_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void confirmed_password_label_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }

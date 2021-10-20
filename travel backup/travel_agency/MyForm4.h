@@ -82,7 +82,8 @@ namespace travelagency {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(887, 481);
+			this->button1->Font = (gcnew System::Drawing::Font(L"Arial", 9));
+			this->button1->Location = System::Drawing::Point(871, 399);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 0;
@@ -92,25 +93,30 @@ namespace travelagency {
 			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->BackgroundColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(174)),
+				static_cast<System::Int32>(static_cast<System::Byte>(179)), static_cast<System::Int32>(static_cast<System::Byte>(198)));
+			this->dataGridView1->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(161, 12);
+			this->dataGridView1->Location = System::Drawing::Point(195, 12);
 			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(742, 330);
+			this->dataGridView1->Size = System::Drawing::Size(751, 330);
 			this->dataGridView1->TabIndex = 1;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(28, 87);
+			this->button2->Font = (gcnew System::Drawing::Font(L"Arial", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button2->Location = System::Drawing::Point(62, 87);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 23);
 			this->button2->TabIndex = 2;
-			this->button2->Text = L"to book";
+			this->button2->Text = L"book";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm4::button2_Click);
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(28, 39);
+			this->textBox1->Location = System::Drawing::Point(49, 39);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(100, 20);
 			this->textBox1->TabIndex = 3;
@@ -118,35 +124,46 @@ namespace travelagency {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(25, 12);
+			this->label1->Font = (gcnew System::Drawing::Font(L"Arial", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label1->Location = System::Drawing::Point(56, 12);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(120, 13);
+			this->label1->Size = System::Drawing::Size(86, 16);
 			this->label1->TabIndex = 4;
-			this->label1->Text = L"Select room\'s id to book";
+			this->label1->Text = L"Enter room id";
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(28, 134);
+			this->button3->Font = (gcnew System::Drawing::Font(L"Arial", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button3->Location = System::Drawing::Point(62, 134);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 23);
 			this->button3->TabIndex = 5;
-			this->button3->Text = L"to unbook";
+			this->button3->Text = L"unbook";
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm4::button3_Click);
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(25, 237);
+			this->label2->Font = (gcnew System::Drawing::Font(L"Arial", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label2->ForeColor = System::Drawing::Color::Red;
+			this->label2->Location = System::Drawing::Point(24, 237);
+			this->label2->MinimumSize = System::Drawing::Size(150, 30);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(0, 13);
+			this->label2->Size = System::Drawing::Size(150, 30);
 			this->label2->TabIndex = 6;
+			this->label2->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// MyForm4
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(974, 516);
+			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(174)), static_cast<System::Int32>(static_cast<System::Byte>(179)),
+				static_cast<System::Int32>(static_cast<System::Byte>(198)));
+			this->ClientSize = System::Drawing::Size(974, 434);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->label1);

@@ -73,6 +73,7 @@ namespace travelagency {
 			// 
 			this->login_button->Font = (gcnew System::Drawing::Font(L"Arial", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->login_button->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->login_button->Location = System::Drawing::Point(234, 202);
 			this->login_button->Name = L"login_button";
 			this->login_button->Size = System::Drawing::Size(117, 26);
@@ -170,6 +171,8 @@ namespace travelagency {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(174)), static_cast<System::Int32>(static_cast<System::Byte>(179)),
+				static_cast<System::Int32>(static_cast<System::Byte>(198)));
 			this->ClientSize = System::Drawing::Size(584, 361);
 			this->Controls->Add(this->error_label);
 			this->Controls->Add(this->password_box);

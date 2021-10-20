@@ -12,30 +12,44 @@ int WINAPI WinMain4(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 System::Void travelagency::MyForm4::button2_Click(System::Object^ sender, System::EventArgs^ e)
 {
-	int id = System::Convert::ToInt16(textBox1->Text);
-	if (!hot.isBooked(id))
+	if (textBox1->Text == "")
 	{
-		hot.set_book(id);
-		MyForm4_Load(nullptr, nullptr);
-		label2->Text = "";
+		label2->Text = "enter id";
 	}
-	else
+	else 
 	{
-		label2->Text = "user is already booked";
+		int id = System::Convert::ToInt16(textBox1->Text);
+		if (!hot.isBooked(id))
+		{
+			hot.set_book(id);
+			MyForm4_Load(nullptr, nullptr);
+			label2->Text = "";
+		}
+		else
+		{
+			label2->Text = "user is already booked";
+		}
 	}
 }
 
 System::Void travelagency::MyForm4::button3_Click(System::Object^ sender, System::EventArgs^ e)
 {
-	int id = System::Convert::ToInt16(textBox1->Text);
-	if (hot.isUserBooked(id))
+	if (textBox1->Text == "")
 	{
-		hot.set_unbook(id);
-		label2->Text = "";
-		MyForm4_Load(nullptr, nullptr);
+		label2->Text = "enter id";
 	}
 	else
 	{
-		label2->Text = "user is already unbooked";
+		int id = System::Convert::ToInt16(textBox1->Text);
+		if (hot.isUserBooked(id))
+		{
+			hot.set_unbook(id);
+			label2->Text = "";
+			MyForm4_Load(nullptr, nullptr);
+		}
+		else
+		{
+			label2->Text = "user is already unbooked";
+		}
 	}
 }

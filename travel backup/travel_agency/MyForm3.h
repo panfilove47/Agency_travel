@@ -66,7 +66,7 @@ namespace travelagency {
 	private: System::Windows::Forms::TextBox^ textBox2;
 
 
-	private: System::Windows::Forms::Label^ label4;
+
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::TextBox^ textBox3;
@@ -96,7 +96,6 @@ namespace travelagency {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
@@ -125,15 +124,18 @@ namespace travelagency {
 			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->BackgroundColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(174)),
+				static_cast<System::Int32>(static_cast<System::Byte>(179)), static_cast<System::Int32>(static_cast<System::Byte>(198)));
+			this->dataGridView1->BorderStyle = System::Windows::Forms::BorderStyle::None;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(210, 37);
+			this->dataGridView1->Location = System::Drawing::Point(312, 37);
 			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(652, 310);
+			this->dataGridView1->Size = System::Drawing::Size(550, 310);
 			this->dataGridView1->TabIndex = 1;
 			// 
 			// create_hotel_btn
 			// 
-			this->create_hotel_btn->Location = System::Drawing::Point(44, 54);
+			this->create_hotel_btn->Location = System::Drawing::Point(63, 82);
 			this->create_hotel_btn->Name = L"create_hotel_btn";
 			this->create_hotel_btn->Size = System::Drawing::Size(75, 23);
 			this->create_hotel_btn->TabIndex = 2;
@@ -143,7 +145,7 @@ namespace travelagency {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(35, 28);
+			this->textBox1->Location = System::Drawing::Point(50, 56);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(100, 20);
 			this->textBox1->TabIndex = 3;
@@ -151,43 +153,36 @@ namespace travelagency {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(41, 12);
+			this->label1->Font = (gcnew System::Drawing::Font(L"Arial", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label1->Location = System::Drawing::Point(37, 37);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(94, 13);
+			this->label1->Size = System::Drawing::Size(126, 16);
 			this->label1->TabIndex = 4;
 			this->label1->Text = L"Enter hotel\'s name";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(32, 249);
+			this->label2->Font = (gcnew System::Drawing::Font(L"Arial", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label2->Location = System::Drawing::Point(22, 231);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(116, 13);
+			this->label2->Size = System::Drawing::Size(156, 16);
 			this->label2->TabIndex = 5;
 			this->label2->Text = L"Enter info about rooms:";
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(35, 278);
+			this->textBox2->Location = System::Drawing::Point(50, 278);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(100, 20);
 			this->textBox2->TabIndex = 6;
 			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Arial Black", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label4->Location = System::Drawing::Point(495, 12);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(70, 23);
-			this->label4->TabIndex = 9;
-			this->label4->Text = L"Rooms";
-			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(41, 262);
+			this->label5->Location = System::Drawing::Point(79, 262);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(43, 13);
 			this->label5->TabIndex = 10;
@@ -196,7 +191,7 @@ namespace travelagency {
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(41, 301);
+			this->label6->Location = System::Drawing::Point(71, 301);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(58, 13);
 			this->label6->TabIndex = 12;
@@ -204,7 +199,7 @@ namespace travelagency {
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(35, 317);
+			this->textBox3->Location = System::Drawing::Point(50, 317);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(100, 20);
 			this->textBox3->TabIndex = 11;
@@ -212,7 +207,7 @@ namespace travelagency {
 			// label7
 			// 
 			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(53, 340);
+			this->label7->Location = System::Drawing::Point(85, 340);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(31, 13);
 			this->label7->TabIndex = 14;
@@ -220,14 +215,14 @@ namespace travelagency {
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(35, 356);
+			this->textBox4->Location = System::Drawing::Point(50, 356);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(100, 20);
 			this->textBox4->TabIndex = 13;
 			// 
 			// create_room_btn
 			// 
-			this->create_room_btn->Location = System::Drawing::Point(35, 382);
+			this->create_room_btn->Location = System::Drawing::Point(63, 382);
 			this->create_room_btn->Name = L"create_room_btn";
 			this->create_room_btn->Size = System::Drawing::Size(75, 23);
 			this->create_room_btn->TabIndex = 15;
@@ -237,7 +232,7 @@ namespace travelagency {
 			// 
 			// delete_room_btn
 			// 
-			this->delete_room_btn->Location = System::Drawing::Point(35, 471);
+			this->delete_room_btn->Location = System::Drawing::Point(63, 471);
 			this->delete_room_btn->Name = L"delete_room_btn";
 			this->delete_room_btn->Size = System::Drawing::Size(75, 23);
 			this->delete_room_btn->TabIndex = 16;
@@ -247,7 +242,7 @@ namespace travelagency {
 			// 
 			// delete_hotel_btn
 			// 
-			this->delete_hotel_btn->Location = System::Drawing::Point(35, 174);
+			this->delete_hotel_btn->Location = System::Drawing::Point(63, 174);
 			this->delete_hotel_btn->Name = L"delete_hotel_btn";
 			this->delete_hotel_btn->Size = System::Drawing::Size(75, 23);
 			this->delete_hotel_btn->TabIndex = 17;
@@ -257,7 +252,7 @@ namespace travelagency {
 			// 
 			// id_to_delete_textBox
 			// 
-			this->id_to_delete_textBox->Location = System::Drawing::Point(35, 148);
+			this->id_to_delete_textBox->Location = System::Drawing::Point(50, 148);
 			this->id_to_delete_textBox->Name = L"id_to_delete_textBox";
 			this->id_to_delete_textBox->Size = System::Drawing::Size(100, 20);
 			this->id_to_delete_textBox->TabIndex = 18;
@@ -265,16 +260,19 @@ namespace travelagency {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(41, 122);
+			this->label3->Font = (gcnew System::Drawing::Font(L"Arial", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label3->Location = System::Drawing::Point(49, 122);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(76, 13);
+			this->label3->Size = System::Drawing::Size(102, 16);
 			this->label3->TabIndex = 19;
 			this->label3->Text = L"Enter hotel\'s id";
 			// 
 			// label8
 			// 
 			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(32, 497);
+			this->label8->ForeColor = System::Drawing::Color::Red;
+			this->label8->Location = System::Drawing::Point(0, 497);
 			this->label8->MaximumSize = System::Drawing::Size(200, 40);
 			this->label8->MinimumSize = System::Drawing::Size(200, 40);
 			this->label8->Name = L"label8";
@@ -284,7 +282,7 @@ namespace travelagency {
 			// 
 			// textBox5
 			// 
-			this->textBox5->Location = System::Drawing::Point(35, 445);
+			this->textBox5->Location = System::Drawing::Point(50, 445);
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(100, 20);
 			this->textBox5->TabIndex = 21;
@@ -292,9 +290,11 @@ namespace travelagency {
 			// label9
 			// 
 			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(32, 429);
+			this->label9->Font = (gcnew System::Drawing::Font(L"Arial", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label9->Location = System::Drawing::Point(22, 417);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(120, 13);
+			this->label9->Size = System::Drawing::Size(163, 16);
 			this->label9->TabIndex = 22;
 			this->label9->Text = L"Enter room\'s id to delete";
 			// 
@@ -302,6 +302,8 @@ namespace travelagency {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(174)), static_cast<System::Int32>(static_cast<System::Byte>(179)),
+				static_cast<System::Int32>(static_cast<System::Byte>(198)));
 			this->ClientSize = System::Drawing::Size(874, 549);
 			this->Controls->Add(this->label9);
 			this->Controls->Add(this->textBox5);
@@ -316,7 +318,6 @@ namespace travelagency {
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->label5);
-			this->Controls->Add(this->label4);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
